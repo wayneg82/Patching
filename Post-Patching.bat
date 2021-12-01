@@ -24,13 +24,4 @@ Disable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineCore"
 Disable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineUA"
 Disable-ScheduledTask -TaskPath "Microsoft\Windows\Maintenance" -TaskName "WinSAT"
 
-# Clean up Image
-#Write-Host "Cleaning up Image"
-#Remove-Item -Path "C:\Users\Public\Desktop\*" -Recurse -Force
-#Remove-Item -Path $Env:TEMP\* -Recurse -Force
-#Remove-Item -Path "C:\Windows\Temp\*" -Recurse -Force
-#Remove-Item -Path "C:\Windows\SoftwareDistribution\*" -Recurse -Force
-
-# Set Execution Policy
-# Write-Host "Setting PowerShell Execution Policy to Restricted"
-# Set-ExecutionPolicy Restricted -Force
+[System.Windows.MessageBox]::Show('Updates disabled, please proceed with sealing tasks')
