@@ -4,7 +4,8 @@
 Write-Host "Stopping and Disabling Services"
 Stop-Service -Name bits
 Stop-Service -Name wuauserv
-Stop-Service -Name ClickToRunSvc 
+Stop-Service -Name ClickToRunSvc
+Stop-Service -Name AdobeARMservice
 Set-Service -Name bits -StartupType Disabled
 Set-Service -Name wuauserv -StartupType Disabled
 Set-Service -Name ClickToRunSvc -DisplayName "Microsoft Office Click-to-Run Service" -StartupType Disabled
