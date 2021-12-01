@@ -11,20 +11,4 @@ Start-Service -Name wuauserv
 Start-Service -Name ClickToRunSvc
 Start-Service -Name AdobeARMservice
 
-# Update Microsoft Edge
-# Write-Host "Updating Microsoft Edge"
-#
-
-# Update Windows
-Write-Host "Updating Windows"
-Import-Module PSWindowsUpdate
-Get-WUInstall -Install -AcceptAll -IgnoreReboot
-
-# Update Microsoft Office
-Write-Host "Updating Microsoft Office"
-cd "C:\Program Files\Common Files\microsoft shared\ClickToRun"
-.\OfficeC2RClient.exe /update user displaylevel=false forceappshutdown=true
-
-# Sleep for 5 minutes before proceeding with the next task
-Write-Host "Waiting for operation to complete"
-Start-Sleep -s 300
+[System.Windows.MessageBox]::Show('Please proceed with patching')
