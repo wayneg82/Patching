@@ -9,6 +9,7 @@ Set-Service -Name ClickToRunSvc -DisplayName "Microsoft Office Click-to-Run Serv
 Start-Service -Name bits
 Start-Service -Name wuauserv
 Start-Service -Name ClickToRunSvc
+Start-Service -Name AdobeARMservice
 
 # Update Microsoft Edge
 # Write-Host "Updating Microsoft Edge"
