@@ -12,6 +12,7 @@ Set-Service -Name gupdate -DisplayName "Google Update Service (gupdate)" -Startu
 Set-Service -Name gupdatem -DisplayName "Google Update Service (gupdatem)" -StartupType Disabled
 Set-Service -Name edgeupdate -DisplayName "Microsoft Edge Update Service (edgeupdate)" -StartupType Disabled
 Set-Service -Name edgeupdatem -DisplayName "Microsoft Edge Update Service (edgeupdatem)" -StartupType Disabled
+Set-Service -Name AdobeARMservice -DisplayName "Adobe Acrobat Update Service" -StartupType Disabled
 
 # Disable Scheduled Tasks
 Write-Host "Disabling Scheduled Tasks"
