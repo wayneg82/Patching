@@ -1,4 +1,4 @@
-# This script will stop relevant services/tasks in preperation for final image sealing with BISF
+# This script will stop relevant update services/tasks in preperation for image sealing
 
 # Stop and Disable Services
 Write-Host "Stopping and Disabling Services"
