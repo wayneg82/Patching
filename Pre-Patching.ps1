@@ -1,5 +1,4 @@
 # Enables Relevant services to enable patching of Windows and MS Office
-# Requires the Windows Update PowerShell Module - https://www.powershellgallery.com/packages/PSWindowsUpdate/2.2.0.2
 
 # Enable and Start Services
 Write-Host "Enabling and Starting Services"
