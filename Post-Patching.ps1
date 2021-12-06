@@ -22,4 +22,5 @@ Disable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineCore"
 Disable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineUA"
 # Disable-ScheduledTask -TaskPath "Microsoft\Windows\Maintenance" -TaskName "WinSAT"
 
+Add-Type -AssemblyName PresentationFramework
 [System.Windows.MessageBox]::Show('Updates disabled, please proceed with sealing tasks')
