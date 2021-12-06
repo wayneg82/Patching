@@ -14,4 +14,5 @@ Start-Service -Name wuauserv
 Start-Service -Name ClickToRunSvc
 Start-Service -Name AdobeARMservice
 
+Add-Type -AssemblyName PresentationFramework
 [System.Windows.MessageBox]::Show('Please proceed with patching')
