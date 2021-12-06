@@ -2,11 +2,9 @@
 
 # Stop and Disable Services
 Write-Host "Stopping and Disabling Services"
-Stop-Service -Name bits
 Stop-Service -Name wuauserv
 Stop-Service -Name ClickToRunSvc
 Stop-Service -Name AdobeARMservice
-Set-Service -Name bits -StartupType Disabled
 Set-Service -Name wuauserv -StartupType Disabled
 Set-Service -Name ClickToRunSvc -DisplayName "Microsoft Office Click-to-Run Service" -StartupType Disabled
 Set-Service -Name gupdate -DisplayName "Google Update Service (gupdate)" -StartupType Disabled
@@ -22,6 +20,6 @@ Disable-ScheduledTask -TaskName "GoogleUpdateTaskMachineCore"
 Disable-ScheduledTask -TaskName "GoogleUpdateTaskMachineUA"
 Disable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineCore"
 Disable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineUA"
-Disable-ScheduledTask -TaskPath "Microsoft\Windows\Maintenance" -TaskName "WinSAT"
+# Disable-ScheduledTask -TaskPath "Microsoft\Windows\Maintenance" -TaskName "WinSAT"
 
 [System.Windows.MessageBox]::Show('Updates disabled, please proceed with sealing tasks')
